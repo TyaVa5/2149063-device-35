@@ -8,21 +8,22 @@
   </head>
   <body>
   <header class="page-header">
-  <img src="images/logo-1.svg" width="145" height="36" alt="Девайс логотип">
+  <img class="logo-header" src="images/logo-1.svg" width="145" height="36" alt="Девайс логотип">
+
+<ul class="user-menu">
     <form action="https://echo.htmlacademy.ru/">
       <input type="search" value="Текст поиска"/>
       <input type="submit" value="Найти"/>
     </form>
-<ul class="navigation-list">
-      <li class="navigation-item">
+  <li class="user-menu-item">
         <img src="images/main-stage/header/entrance.svg" width="13" height="12" alt="Иконка входа">
-        <a class="navigation-link" href="#">
+        <a class="user-menu-link navigation-link" href="#">
           <span class="navigation">
             Войти</span>
           </a>
 
       </li>
-      <li class="navigation-item">
+      <li class="user-menu-item">
         <img src="images/main-stage/header/compare.svg" width="10" height="12" alt="иконка сравнения">
         <a class="navigation-link" href="#">
           <span class="navigation">
@@ -31,40 +32,40 @@
             </a>
 
       </li>
-      <li class="navigation-item">
+      <li class="user-menu-item">
         <img src="images/main-stage/header/basket.svg" width="31" height="21" alt="иконка корзины">
         <a class="navigation-link" href="#">
 
             <span class="navigation">Корзина</span>
           </a>
     </ul>
-    <ul class="navigation-list">
-      <li class="navigation-item">
-        <a class="navigation-link" href="catalog.html">
+    <ul class="main-menu">
+      <li class="main-menu-item">
+        <a class="main-menu-link navigation-link" href="catalog.html">
           <span class="services">
             Каталог товаров
             </span>
       </a>
 
       </li>
-      <li class="navigation-item">
-        <a class="navigation-link" href="#">
+      <li class="main-menu-item">
+        <a class="main-menu-link navigation-link" href="#">
           <span class="services">
             Доставка
             </span>
           </a>
 
       </li>
-      <li class="navigation-item">
-        <a class="navigation-link" href="#">
+      <li class="main-menu-item">
+        <a class="main-menu-link navigation-link" href="#">
           <span class="services">
             Гарантия
             </span>
           </a>
 
       </li>
-      <li class="navigation-item">
-        <a class="navigation-link" href="#">
+      <li class="main-menu-item">
+        <a class="main-menu-link navigation-link" href="#">
           <span class="services">
         Контакты
       </span>
@@ -74,12 +75,13 @@
     </ul>
 
   </header>
-  <main class="main-index">
+  <main class="main-index main-container">
+    <div class="page-container">
     <section class="main-header">
     <ul class="main-header-list">
       <li class="main-header-list-item">
-    <img src="images/main-stage/header/product.png" width="560" height="560" alt="Квадрокоптер">
-    <h2 class="title">
+    <img class="main-header-img-quadrocopter" src="images/main-stage/header/product.png" width="560" height="560" alt="Квадрокоптер">
+    <h2 class="title title-active">
       Порхает как бабочка жалит как пчела!
     </h2>
      <div class="quadrocopter">
@@ -174,17 +176,17 @@
 <section class="information">
   <ul class="button-information-list">
       <li class="button-information-item">
-        <a class="navigation-link" href="#">
-          <span class="services">
-            Доставка</span>
+        <a class="button-information-link navigation-link" href="#">
+          <span class="services services-active">
+            доставка</span>
           </a>
           <li class="button-information-item">
-        <a class="navigation-link" href="#">
+        <a class="button-information-link navigation-link" href="#">
           <span class="services">
             Гарантия</span>
             </a>
             <li class="button-information-item">
-              <a class="navigation-link" href="#">
+              <a class="button-information-link navigation-link" href="#">
                 <span class="services">
                   Кредит</span>
                 </a>
@@ -192,7 +194,7 @@
               </ul>
               <ul class="information-list">
                 <li class="information-list-item">
-              <h2 class="title title-active">
+              <h2 class="title">
                 Доставка
               </h2>
               <p> Мы с удовльствием доставим ваш товар прямо к вашему
@@ -227,14 +229,14 @@
 </section>
 <section class="delivery">
   <div class="delivery-information">
-    <img class="Delivery-machine" src="images/main-stage/main/delivery-machine.svg" width="47" height="31"  alt="Грузовик">
+    <img class="delivery-machine" src="images/main-stage/main/delivery-machine.svg" width="47" height="31"  alt="Грузовик">
     <p class="delivery-text">
       Доставим редкий товар под заказ
     </p>
     </div>
 </section>
-
-<section>
+<div class="detail">
+<section class="about-us">
   <h2 class="title"> О нас</h2>
   <div class="about-description">
     <p>Огромный выбор гаджетов не оставит равнодушным гика,
@@ -272,6 +274,7 @@
       </ul>
       <a class="more-detailed" href="#">Напишите нам</a>
 </section>
+</div>
 <div class="subscribe-newsletter">
   <h2 class="title"> Подпишитесь на рассылку</h2>
   <p> Еженедельный дайджест с обзорами новинок,
@@ -288,6 +291,7 @@
     <img src="images/main-stage/main/green-jackdaw.svg" width="14" height="14" alt="галочка">
     Это бесплатно</p>
 </div>
+    </div>
 </main>
 
 

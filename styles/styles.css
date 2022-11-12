@@ -21,8 +21,9 @@
   font-display: swap;
   src: url(../fonts/raleway/raleway-800.woff2) format("woff2");
 }
-
-
+html {
+height: 100%;
+}
 
 body {
   font-family: "rubik", sans-serif;
@@ -31,21 +32,88 @@ body {
   font-weight: 400;
   background-color: #ffffff;
   color: #000000;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
+.logo-header {
+  padding: 20px;
+}
+.main-container {
+  flex-grow: 1;
+}
+.user-menu {
+display: flex;
+width: 940px;
+margin: 0 auto;
+margin-left: auto;
+line-height: 91px;
+}
+.main-menu{
+  display: flex;
+  width: 940px;
+  margin: 0 auto;
+  line-height: 171px;
+}
+
 
 .page-header {
   background: linear-gradient(to bottom, transparent 0 40px, #FFE17F 40px 100%);
+  width: 1440px;
+  margin: 0 auto;
 }
 .main-header {
   background: linear-gradient(to bottom, #FFE17F 0 148px, transparent 148px 100% );
 }
+.page-container {
+  width: 1440px;
+  margin: 0 auto;
 
+}
+.products-icon-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.information {
+  display: flex;
+  justify-self: flex-end;
+}
+.button-information-list {
+  width: 243px;
+}
+.information-list-item {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
 .products-image {
 background-color: #FFE17F;
 }
 .information {
   background: linear-gradient(to bottom, transparent 0 102px, #F0F0F0 102px 100%);
 }
+.delivery-text {
+  text-align: center;
+}
+.detail {
+  display: flex;
+  justify-content: space-between;
+
+}
+.subscribe-newsletter {
+  display: inline-flex;
+  justify-content: space-between;
+}
+.main-header-list-item {
+  display: flex;
+}
+
+
 .delivery {
 background-color: #F0F0F0;
 }
@@ -63,7 +131,6 @@ background-color: #F0F0F0;
 }
 .navigation-link, .breadcrumbs-link  {
   text-decoration: none;
-  text-align: center;
   color: #000000;
 }
 .navigation-list, .main-header-list, .button-information-list {
@@ -87,6 +154,12 @@ background-color: #F0F0F0;
   line-height: 21px;
   font-weight: 800;
   text-transform: uppercase;
+}
+.services-active {
+  background-color: #000000;
+  color: #FFE17F;
+  width: 280px;
+  line-height: 40px;
 }
 
 .more-detailed {
